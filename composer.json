@@ -1,0 +1,27 @@
+{
+  "name": "felipeelia/ep-parallel",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Felipe Elia",
+      "email": "felipeelia@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "amphp/amp": "^2.5",
+    "amphp/http-client": "^4.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "EpParallel\\": "includes/classes/"
+    }
+  },
+  "require-dev": {
+    "10up/phpcs-composer": "dev-master"
+  },
+  "scripts": {
+    "lint": "phpcs ep-parallel.php includes",
+    "lint-fix": "phpcbf ep-parallel.php includes"
+  }
+}
